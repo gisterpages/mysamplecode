@@ -1,0 +1,102 @@
+a {
+    outline: none !important;
+}
+
+footer {
+	text-align: center;
+}
+
+.navbar-brand
+{
+    margin-top: 40px; 
+    margin-left: 10px;
+    border: 2px #cccccc solid; 
+}
+
+/* login form */
+.login-form-block {
+    border: 5px solid #cccccc;
+    border-radius: 8px;
+    padding: 10px;
+}
+section.main {
+    min-height: 300px;
+}
+.login-form .lnk-frgt-pass{
+    padding-left: 120px;
+}
+
+/* nav */
+.navbar-default {
+    background-color: #95B3D7;
+    border-color: #95B3D7; 
+}
+
+.navbar-default .navbar-nav li a {
+    color: #ffffff;
+}
+.navbar-nav li.active-nav a {
+    color: #000000;
+}
+
+.panel-heading h4 {
+    margin: 2px;
+}
+/*
+footer
+*/
+footer {
+    margin-top: 20px;
+}
+
+footer p{
+    text-align: left;
+}
+footer hr {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.footer-title {
+    text-align: left;
+}
+
+img.thumb {
+    margin-top: 20px; 
+    max-width: 300px;
+    max-height: 300px;
+}
+
+@media only screen and (max-width: 520px) {
+    .logo {
+        text-align: center;
+    }
+    
+    .navbar-brand {
+        display: block;
+        padding: 20px;
+        padding-top: 50px;
+        float: none;
+    }
+    
+    .login-form .pull-right {
+         float: none !important;
+    }
+}
+@media only screen and (max-width: 330px) {
+    /* For mobile phones: 5inch */
+    .login-form .lnk-frgt-pass{
+    padding-left: 80px;
+}
+}
+
+@media only screen and (max-width: 767px) {
+    /* For mobile phones: */
+    
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    
+
+}
+
