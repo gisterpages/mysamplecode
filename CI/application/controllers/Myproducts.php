@@ -222,8 +222,7 @@ class Myproducts extends CI_Controller {
     function ajax_checkMyproductSerial($serial){
         
         $w_data['serial_no'] = $serial;
-        //$w_data['customerid'] = $this->session->userdata('customer_id');
-                
+      
         $exists = $this->myproduct_model->is_exists($w_data);
         if($exists){
             $result['result'] = 1;
