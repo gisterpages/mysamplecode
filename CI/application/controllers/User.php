@@ -52,16 +52,7 @@ class User extends CI_Controller {
         $this->load->view('default/forgot-password', $this->data);
     }
 
-//    public function profile() {
-//        $this->_isLoggedIn();
-//        $this->load->view('default/profile', $this->data);
-//    }
 
-//    public function myproducts() {
-//        $this->_isLoggedIn();
-//        $this->data['nav_myproducts'] = 1;
-//        $this->load->view('default/myproducts', $this->data);
-//    }
     
     public function about() {
         $this->_isLoggedIn();
@@ -189,13 +180,9 @@ class User extends CI_Controller {
     }
     
     function logout() {
-        //$this->session->sess_destroy();
+       
         userActivityLog('User Logged out', 'User');
-//        $this->session->unset_userdata(array(
-//            'user_id' => '',
-//            'user_display_name' => '',
-//            'logged_in' => false
-//        ));
+
         $this->session->sess_destroy();
 
         $messag = 'You have logged out!';
