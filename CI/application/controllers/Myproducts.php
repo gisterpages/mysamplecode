@@ -34,6 +34,7 @@ class Myproducts extends CI_Controller {
         $this->output->set_template('default');
        
     }
+    
     /*
      * function list all myproducts
      * @params null
@@ -97,6 +98,7 @@ class Myproducts extends CI_Controller {
         
         $this->load->view('default/myproducts/product_add', $this->data);
     }
+    
      /*
      * function to add a product
      * @params productid
@@ -183,10 +185,6 @@ class Myproducts extends CI_Controller {
                         $uploadData[$i]['update_datetime'] = date("Y-m-d H:i:s");
                     }
                 } 
-//                else {
-//                    print_r( $this->upload->display_errors());
-//                    die();
-//                }
             }
 
             if(!empty($uploadData)){
@@ -196,9 +194,6 @@ class Myproducts extends CI_Controller {
             }
         }
         return;
-        //exit();
-        //Get files data from database
-        //$dataUpload['files'] = $this->file->getRows();
         
     }
     
